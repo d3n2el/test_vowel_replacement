@@ -6,7 +6,8 @@ def main():
 def shorten(word):
     for letter in word:
         if letter.lower() in ['a', 'e', 'i', 'o', 'u']:
-            word.replace(letter, "")
+            y+= word.replace(letter, "")
+    return y
 
 
 
