@@ -8,6 +8,8 @@ def shorten(word):
     for letter in word:
         if not letter.lower() in ['a', 'e', 'i', 'o', 'u']:
             w.append(letter)
+        elif letter == " ":  #hopefully preserves spaces
+            w.append(letter)
     result= "".join(w)
     return result
 
