@@ -4,12 +4,15 @@ def main():
 
 
 def shorten(word):
+    w=[]
     for letter in word:
-        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:
-            word = word.replace(letter, "")
-    return word
+        if not letter.lower() in ['a', 'e', 'i', 'o', 'u']:
+            w.append(letter)
+    result= "".join(w)
+    return result
 
 
 
 if __name__ == "__main__":
     main()
+
