@@ -4,17 +4,17 @@ def main():
 
 
 def shorten(word):
-    w=[]
+    w = []
     for letter in word:
-        if not letter.lower() in ['a', 'e', 'i', 'o', 'u']:
-            w.append(letter)
-        elif letter == " ":  #hopefully preserves spaces
-            w.append(letter)
-    result= "".join(w)
+        if letter.lower() not in ['a', 'e', 'i', 'o', 'u']:
+             w.append(letter)
+        if w[-1] == " ":
+                w[-1].replace(" ", "")
+        print(f"Processing '{letter}': {w}")
+    result = "".join(w)
     return result
 
 
 
 if __name__ == "__main__":
     main()
-
